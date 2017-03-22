@@ -8,6 +8,9 @@
 \usepackage{multicol}
 \usepackage{lipsum}% dummy text
 \usepackage{tikz}
+\usepackage{graphicx}
+\numberwithin{equation}{section}
+
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
 \setlength{\columnseprule}{0.4pt}
 \begin{document}
@@ -23,7 +26,7 @@ Each project(name for new profile) consists of groups. Group can be created by o
 \ \\
 \noindent \textbf{Activity} \\
 Task, List and Expense. Task involves work which will consume time of the activity based on the type of work, example Trash cleaning or cooking. List is a way to specify items in a order or unordered form, grocery listing for next week or things to repair in house. Expense activity will involve the money component in it, grocery purchases, refueling vechile. One or more combination can be used to create groups. The groups will encompass members. The task alone group will be cooking turns. Expense activity will involve trips. List activity will involve. Below is the example of each.\\
-
+\iffalse 
 \begin{minipage}{0.32\textwidth}
 
 \end{minipage}%
@@ -107,20 +110,35 @@ Task, List and Expense. Task involves work which will consume time of the activi
 	\end{tabular}
 \end{center}
 \end{table}
+\fi
 \ \\
 \noindent \textbf{Scope} \\
-Each users in the given project will have equal access. The groups can be created with the registered members or non-registered members. Registered members can create new groups, add, delete or modify items. Non-registered members can add, delete or modify items. Non-registered members entry will be added into Members with partial access.
+Each users in the given project will have equal access. The groups can be created by members. Members can create new groups, add, delete or modify items. \\
 \ \\
 \noindent \textbf{Tables} \\
-Members(\underline{MemberID},MemberName,Email,Phone) \\
-Groups(\underline{GroupID,MemberID},GroupName) \\
-Expenses(\underline{TransactionID},GroupID,MemberID,TransactionItem,Cost,ShareType) \\
-Listing(\underline{ListingID},GroupID,MemberID,List,Status) \\
-Task(\underline{TaskID},GroupID,MemberID,Task,Status) \\
-InstantMessage(\underline{MessageID},ToID,FromID,Message,Time,Privacy,tags) \\
+Members(\underline{member\_id},member\_name,email,phone) \\
+Member\_groups(\underline{member\_group\_id},group\_id,member\_id,member\_value) \\
+Groups(\underline{group\_id},member\_id,group\_name) \\
+Expenses(\underline{transaction\_id},member\_group\_id,item,cost,expenses\_shared\_with) \\
+Lists(\underline{list\_id},member\_group\_id,list,status) \\
+Tasks(\underline{task\_id},member\_group\_id,task,status) \\
+Messages(\underline{message\_id},to\_id,from\_id,message,time) \\
 \ \\
+\noindent \textbf{Table description} \\
+\begin{enumerate}
+\item[Members] Will hold all the member details.
+\item[Groups] Members form a group which involve in certain activity. Expenses, Lists and Tasks uses this group as a reference to specific member activity.
+\item[Member\_groups] This table reduces the redundancy of using both group\_id and member\_id in each activities(Expenses, Lists, Tasks) and as well as messages instead member\_group\_id is used in it's place. member\_value column is assigned unique value to a member within a group which enables to identify if only few member in that group. For example, If a purchase is made and it should be shared between 3 members in a 5 member group. member\_value column will help in identifying these three members out of 5 and expenses will be shared among only these 3.(member\_value column will be modified based on implementation realization. This table needs both SQL and NoSQL database implementation to accommodate the Message table.
+\item[Expenses] Activity involving expenses. expenses\_shared\_with column references Member\_groups(member\_value) to identify whether the expenses is of individual or whole group or few members in a group.
+\item[List,Task] Activity involving Lists and Tasks. Status refers to whether the activity is pending or completed.
+\item[Messages] Message can be attached to any activity, group or individual based on to\_id(sender of message by an individual) and from\_id(reciever of the message to group or individual or selected members in a group for an activity). The given relation is given for a SQL database which will be translated to NoSQL database upon implementation.
+\end{enumerate}
 \noindent \textbf{Entity Relationship Diagram} \\
-{\color{red}Incomplete }
+\begin{figure}[h]
+     \centering
+          \label{ocpic}
+                \includegraphics*[angle=360,origin=c,width=.6\linewidth]{ocp2}
+\end{figure}
 \iffalse \tikzstyle{every attribute} = [top color=white, node distance=2.5cm]
 \begin{tikzpicture}[>=open triangle 90, thick,every node/.style={font=\footnotesize}, node distance = 12.2em]
 \node[entity](Employee){Employee};
@@ -147,5 +165,36 @@ InstantMessage(\underline{MessageID},ToID,FromID,Message,Time,Privacy,tags) \\
 \fi
 \ \\
 \noindent \textbf{Implementation} \\
-Database implementation is using PostgreSQL and MongoDB(Messaging table alone). User interface is either using html/php or AngularJS.
+Database implementation is using PostgreSQL and MongoDB(Messaging and member\_groups table alone). User interface is either using html/php or J2EE(JSP) or AngularJS. \\
+\ \\
+\noindent \textbf{Dataset} \\
+For the project the personal available data is used having 7 years of personal expenses, trips, grocery bills. The available data is modified to suite to the project. Remaining data will be created. \\
+\iffalse
+\begin{table}[h]
+\begin{center}
+	\begin{tabular}{| c | c | c | c |}
+	\hline
+	\textbf{Timeline} & \textbf{Task} & \textbf{ETA}\footnote{Tentative Estimated Time of Accomplishment} & \textbf{Status} \\  % put & between columns
+	\hline
+	\begin{tabular}{@{}c@{}}Week 1 \\ ($5^{th}-11^{th}$ March)\end{tabular}  & \begin{tabular}{@{}c@{}}Users, Table(With sample data), Views, \\ Constraints, SQL queries to retrieve and load\end{tabular}  & 10 hrs & \\  % put & between columns
+	\hline
+	\begin{tabular}{@{}c@{}}Week 2 \\ ($12^{th}-18^{th}$ March)\end{tabular} & \begin{tabular}{@{}c@{}}Procedures, Functions, \\ Complete DB level implementation\end{tabular}  & 12 hrs &  \\  % put & between columns
+	\hline
+	\begin{tabular}{@{}c@{}}Week 3 \\ ($19^{th}-25^{th}$ March)\end{tabular} & \begin{tabular}{@{}c@{}}Front-end/UI Interface \\ (with known technology J2EE,JSP/PHP)\end{tabular} & 10 hrs &  \\  % put & between columns
+	\hline
+	\begin{tabular}{@{}c@{}}Week 4 \\ ($26^{th}$ March $-1^{th}$ April)\end{tabular} & Instant Messaging through MongoDB & 14 hrs & \\  % put & between columns
+	\hline
+	\begin{tabular}{@{}c@{}}Week 5 \\ ($9^{th}-15^{th}$ April)\end{tabular} & Front-end implementation using Angular JS & 15 hrs & \\  % put & between columns
+	\hline
+	\begin{tabular}{@{}c@{}}Week 6 \\ ($16^{th}-22^{nd}$ April)\end{tabular} & Front-end implementation using Angular JS & 15 hrs &  \\  % put & between columns
+	\hline
+	\begin{tabular}{@{}c@{}}Week 7 \\ ($23^{rd}-29^{th}$ April)\end{tabular} & \begin{tabular}{@{}c@{}}Performance, Security testing and \\ enhancement, Report\end{tabular}  & 10 hrs &  \\  % put & between columns
+	\hline
+	\begin{tabular}{@{}c@{}}Week 8 \\ ($23^{rd}-29^{th}$ April)\end{tabular}  & \begin{tabular}{@{}c@{}}Slide preparation and presentation \\ of project\end{tabular}  & 8 hrs &  \\  % put & between columns
+	\hline
+	\end{tabular}
+\label{ }
+\end{center}
+\end{table}
+\fi
 \end{document}
