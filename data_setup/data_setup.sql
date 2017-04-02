@@ -1,3 +1,230 @@
+/*Removing tables contents*/
+delete from schedules;
+delete from tasks;
+delete from expenses;
+delete from notes;
+delete from messages;
+delete from member_groups;
+delete from members;
+delete from groups;
+delete from login;
+
+/*login table*/
+insert into login(username,password) values('Vijay','Password');
+insert into login(username,password) values('Akash','password');
+insert into login(username,password) values('Siddharth','123456');
+insert into login(username,password) values('Sandeep','12345678');
+insert into login(username,password) values('Raja','1234');
+insert into login(username,password) values('Nithin','qwerty');
+insert into login(username,password) values('Zachery','12345');
+insert into login(username,password) values('Zachary','dragon');
+insert into login(username,password) values('Zachariah','oliver');
+insert into login(username,password) values('Yousuf','baseball');
+insert into login(username,password) values('Yisi','football');
+insert into login(username,password) values('Xianxin','letmein');
+insert into login(username,password) values('Warren','monkey');
+insert into login(username,password) values('Vijay','jasper');
+insert into login(username,password) values('Victoria','abc123');
+insert into login(username,password) values('Turner','mustang');
+insert into login(username,password) values('Tristan','michael');
+insert into login(username,password) values('Trey','shadow');
+insert into login(username,password) values('Traci','master');
+insert into login(username,password) values('Tom','jennifer');
+insert into login(username,password) values('Ting','111111');
+insert into login(username,password) values('Timothy','2000');
+insert into login(username,password) values('Theresa','jordan');
+insert into login(username,password) values('Theodora','superman');
+insert into login(username,password) values('Tara','harley');
+insert into login(username,password) values('Tanner','1234567');
+insert into login(username,password) values('Sydney','qazwsx');
+insert into login(username,password) values('Stephen','victoria');
+insert into login(username,password) values('Spencer','mother');
+insert into login(username,password) values('Skyler','trustno1');
+insert into login(username,password) values('Sixiang','ranger');
+insert into login(username,password) values('Shreyas','buster');
+insert into login(username,password) values('Shelby','thomas');
+insert into login(username,password) values('Shayne','tigger');
+insert into login(username,password) values('Shayla','robert');
+insert into login(username,password) values('Sharidan','soccer');
+insert into login(username,password) values('Sarah','angel');
+insert into login(username,password) values('Sara','batman');
+insert into login(username,password) values('Samuel','test');
+insert into login(username,password) values('Samiullah','pass');
+insert into login(username,password) values('Samantha','david');
+insert into login(username,password) values('Sam','hockey');
+insert into login(username,password) values('Ronald','george');
+insert into login(username,password) values('Robert','charlie');
+insert into login(username,password) values('Risa','andrew');
+insert into login(username,password) values('Rebecca','michelle');
+insert into login(username,password) values('Raeann','love');
+insert into login(username,password) values('Rachel','sunshine');
+insert into login(username,password) values('Quentin','jessica');
+insert into login(username,password) values('Qixin','theman');
+insert into login(username,password) values('Premiere','winner');
+insert into login(username,password) values('Precious-Edna','pepper');
+insert into login(username,password) values('Phoenix','daniel');
+insert into login(username,password) values('Peter','access');
+insert into login(username,password) values('Payton','123456789');
+insert into login(username,password) values('Paige','654321');
+insert into login(username,password) values('Noe','joshua');
+insert into login(username,password) values('Nicole','maggie');
+insert into login(username,password) values('Nickalas','starwars');
+insert into login(username,password) values('Nicholas','silver');
+insert into login(username,password) values('Nathan','william');
+insert into login(username,password) values('Natasha','dallas');
+insert into login(username,password) values('Natalie','yankees');
+insert into login(username,password) values('Narasimha','123123');
+insert into login(username,password) values('Myles','ashley');
+insert into login(username,password) values('Morgan','debbie');
+insert into login(username,password) values('Miranda','hello');
+insert into login(username,password) values('Mikayla','amanda');
+insert into login(username,password) values('Michael','orange');
+insert into login(username,password) values('Merry','biteme');
+insert into login(username,password) values('Mercedes','freedom');
+insert into login(username,password) values('Menghan','computer');
+insert into login(username,password) values('Megan','sandra');
+insert into login(username,password) values('Matthew','thunder');
+insert into login(username,password) values('Marie','nicole');
+insert into login(username,password) values('Maria','maxwell');
+insert into login(username,password) values('Manami','heather');
+insert into login(username,password) values('Mamerto','hammer');
+insert into login(username,password) values('Mallory','summer');
+insert into login(username,password) values('Malik','corvette');
+insert into login(username,password) values('Madison','taylor');
+insert into login(username,password) values('Madina','jaguar');
+insert into login(username,password) values('Madeline','austin');
+insert into login(username,password) values('Macy','1111');
+insert into login(username,password) values('Mackenzie','merlin');
+insert into login(username,password) values('Lyssa','matthew');
+insert into login(username,password) values('Luke','121212');
+insert into login(username,password) values('Louis','golfer');
+insert into login(username,password) values('Likitha','cheese');
+insert into login(username,password) values('Laura','princess');
+insert into login(username,password) values('Landon','martin');
+insert into login(username,password) values('Kyla','chelsea');
+insert into login(username,password) values('Krystal','patrick');
+insert into login(username,password) values('Kori','richard');
+insert into login(username,password) values('Kingham','diamond');
+insert into login(username,password) values('Kimberly','yellow');
+insert into login(username,password) values('Kevin','bigdog');
+insert into login(username,password) values('Kelsie','secret');
+insert into login(username,password) values('Kelsey','asdfgh');
+insert into login(username,password) values('Kaylee','sparky');
+insert into login(username,password) values('Kayla','cowboy');
+insert into login(username,password) values('Katherine','Password');
+insert into login(username,password) values('Katharyn','camaro');
+insert into login(username,password) values('Katelyn','anthony');
+insert into login(username,password) values('Kasey','matrix');
+insert into login(username,password) values('Karrigan','falcon');
+insert into login(username,password) values('Karlie','iloveyou');
+insert into login(username,password) values('Kaleigh','bailey');
+insert into login(username,password) values('Kaci','guitar');
+insert into login(username,password) values('Julia','jackson');
+insert into login(username,password) values('Joshua','purple');
+insert into login(username,password) values('Josephine','scooter');
+insert into login(username,password) values('Joseph','phoenix');
+insert into login(username,password) values('Jorge','aaaaaa');
+insert into login(username,password) values('Jordan','morgan');
+insert into login(username,password) values('John','tigers');
+insert into login(username,password) values('Jessica','porsche');
+insert into login(username,password) values('Jeron','mickey');
+insert into login(username,password) values('Jeremy','maverick');
+insert into login(username,password) values('Jennifer','cookie');
+insert into login(username,password) values('Jennica','nascar');
+insert into login(username,password) values('Jenna','peanut');
+insert into login(username,password) values('Jason','justin');
+insert into login(username,password) values('Jasmine','131313');
+insert into login(username,password) values('Jarelle','money');
+insert into login(username,password) values('James','lucky');
+insert into login(username,password) values('Jahanzib','samantha');
+insert into login(username,password) values('Jaelyn','crystal');
+insert into login(username,password) values('Jacob','steelers');
+insert into login(username,password) values('Jacey','joseph');
+insert into login(username,password) values('Jace','snoopy');
+insert into login(username,password) values('Isiah','boomer');
+insert into login(username,password) values('Isaac','whatever');
+insert into login(username,password) values('Holden','iceman');
+insert into login(username,password) values('Henry','smokey');
+insert into login(username,password) values('Heather','gateway');
+insert into login(username,password) values('Haotian','dakota');
+insert into login(username,password) values('Hansaka','cowboys');
+insert into login(username,password) values('Hannah','eagles');
+insert into login(username,password) values('Haley','chicken');
+insert into login(username,password) values('Gerald','golden');
+insert into login(username,password) values('Gabriela','murphy');
+insert into login(username,password) values('Fua','zxcvbn');
+insert into login(username,password) values('Francisco','please');
+insert into login(username,password) values('Fawaz','andrea');
+insert into login(username,password) values('Faith','ferrari');
+insert into login(username,password) values('Evette','knight');
+insert into login(username,password) values('Ethan','prince');
+insert into login(username,password) values('Emma','melissa');
+insert into login(username,password) values('Emily','compaq');
+insert into login(username,password) values('Emilio','coffee');
+insert into login(username,password) values('Elson','booboo');
+insert into login(username,password) values('Elizabeth','wilson');
+insert into login(username,password) values('Elijah','johnny');
+insert into login(username,password) values('Dustin','bulldog');
+insert into login(username,password) values('Donovan','angela');
+insert into login(username,password) values('Disha','welcome');
+insert into login(username,password) values('Dillon','james');
+insert into login(username,password) values('DeShonna','player');
+insert into login(username,password) values('Derril','ncc1701');
+insert into login(username,password) values('Denis','wizard');
+insert into login(username,password) values('Debarshi','scooby');
+insert into login(username,password) values('DeAngelena','charles');
+insert into login(username,password) values('David','junior');
+insert into login(username,password) values('Daniel','internet');
+insert into login(username,password) values('Damilola','sophie');
+insert into login(username,password) values('Dakota','mike');
+insert into login(username,password) values('Corben','brandy');
+insert into login(username,password) values('Connor','tennis');
+insert into login(username,password) values('Cole','sierra');
+insert into login(username,password) values('Cierra','winston');
+insert into login(username,password) values('Christopher','monster');
+insert into login(username,password) values('Christine','spider');
+insert into login(username,password) values('Christina','lakers');
+insert into login(username,password) values('Chelsey','miller');
+insert into login(username,password) values('Chelsea','rabbit');
+insert into login(username,password) values('Cecilia','enter');
+insert into login(username,password) values('Catherine','mercedes');
+insert into login(username,password) values('Cassandra','brandon');
+insert into login(username,password) values('Caleb','steven');
+insert into login(username,password) values('Brylie','fender');
+insert into login(username,password) values('Brooklyn','john');
+insert into login(username,password) values('Brooke','yamaha');
+insert into login(username,password) values('Brittany','diablo');
+insert into login(username,password) values('Bricelis','chris');
+insert into login(username,password) values('Brian','boston');
+insert into login(username,password) values('Brenda','tiger');
+insert into login(username,password) values('Brandon','marine');
+insert into login(username,password) values('Brady','chicago');
+insert into login(username,password) values('Brad','rangers');
+insert into login(username,password) values('Bethany','gandalf');
+insert into login(username,password) values('Benton','winter');
+insert into login(username,password) values('Benjamin','arsenal');
+insert into login(username,password) values('Artem','barney');
+insert into login(username,password) values('Anran','edward');
+insert into login(username,password) values('Angelica','raiders');
+insert into login(username,password) values('Andrew','marlboro');
+insert into login(username,password) values('Ana','panther');
+insert into login(username,password) values('Amanda','tucker');
+insert into login(username,password) values('Alyssa','thx1138');
+insert into login(username,password) values('Alvin','bigdaddy');
+insert into login(username,password) values('Allison','johnson');
+insert into login(username,password) values('Allicia','chester');
+insert into login(username,password) values('Allan','london');
+insert into login(username,password) values('Alice','midnight');
+insert into login(username,password) values('Alexia','blue');
+insert into login(username,password) values('Alexandria','fishing');
+insert into login(username,password) values('Alan','0');
+insert into login(username,password) values('Adrianna','hannah');
+insert into login(username,password) values('Adam','slayer');
+insert into login(username,password) values('Abby','11111111');
+insert into login(username,password) values('Abbigayle','rachel');
+insert into login(username,password) values('Aaron','asdf');
+
+
 /*Member table*/
 /*insert into members(member_ID,member_name,Email,phone) values
 (concat(rpad('M',5-length(nextval('seq_member_id')::text),'0'),currval('seq_member_id')),'Vijay','vijay@email.com',9876543210),
@@ -6,432 +233,433 @@
 (concat(rpad('M',5-length(nextval('seq_member_id')::text),'0'),currval('seq_member_id')),'Sandeep','sandeep@email.com',9876543213),
 (concat(rpad('M',5-length(nextval('seq_member_id')::text),'0'),currval('seq_member_id')),'Raja','raja@email.com',9876543214),
 (concat(rpad('M',5-length(nextval('seq_member_id')::text),'0'),currval('seq_member_id')),'Nithin','nithin@email.com',9876543215);*/
-insert into members(member_ID,member_name,Email,phone) values
-('M00001','Vijay','vijay@email.com',9610016572);
-insert into members(member_ID,member_name,Email,phone) values
-('M00002','Akash','akash@email.com',9610018459);
-insert into members(member_ID,member_name,Email,phone) values
-('M00003','Siddharth','siddharth@email.com',9610015535);
-insert into members(member_ID,member_name,Email,phone) values
-('M00004','Sandeep','sandeep@email.com',9610012495);
-insert into members(member_ID,member_name,Email,phone) values
-('M00005','Raja','raja@email.com',9610012653);
-insert into members(member_ID,member_name,Email,phone) values
-('M00006','Nithin','nithin@email.com',9610019598);
-insert into members(member_ID,member_name,Email,phone) values
-('M00007','Zachery','zachery@email.com',9610016961);
-insert into members(member_ID,member_name,Email,phone) values
-('M00008','Zachary','zachary@email.com',9610019315);
-insert into members(member_ID,member_name,Email,phone) values
-('M00009','Zachariah','zachariah@email.com',9610013153);
-insert into members(member_ID,member_name,Email,phone) values
-('M00010','Yousuf','yousuf@email.com',9610015453);
-insert into members(member_ID,member_name,Email,phone) values
-('M00011','Yisi','yisi@email.com',9610016655);
-insert into members(member_ID,member_name,Email,phone) values
-('M00012','Xianxin','xianxin@email.com',9610012463);
-insert into members(member_ID,member_name,Email,phone) values
-('M00013','Warren','warren@email.com',9610014186);
-insert into members(member_ID,member_name,Email,phone) values
-('M00014','Vijay','vijay@email.com',9610019061);
-insert into members(member_ID,member_name,Email,phone) values
-('M00015','Victoria','victoria@email.com',9610014532);
-insert into members(member_ID,member_name,Email,phone) values
-('M00016','Turner','turner@email.com',9610018472);
-insert into members(member_ID,member_name,Email,phone) values
-('M00017','Tristan','tristan@email.com',9610013357);
-insert into members(member_ID,member_name,Email,phone) values
-('M00018','Trey','trey@email.com',9610016855);
-insert into members(member_ID,member_name,Email,phone) values
-('M00019','Traci','traci@email.com',9610014528);
-insert into members(member_ID,member_name,Email,phone) values
-('M00020','Tom','tom@email.com',9610014459);
-insert into members(member_ID,member_name,Email,phone) values
-('M00021','Ting','ting@email.com',9610018416);
-insert into members(member_ID,member_name,Email,phone) values
-('M00022','Timothy','timothy@email.com',9610012800);
-insert into members(member_ID,member_name,Email,phone) values
-('M00023','Theresa','theresa@email.com',9610016739);
-insert into members(member_ID,member_name,Email,phone) values
-('M00024','Theodora','theodora@email.com',9610013425);
-insert into members(member_ID,member_name,Email,phone) values
-('M00025','Tara','tara@email.com',9610017692);
-insert into members(member_ID,member_name,Email,phone) values
-('M00026','Tanner','tanner@email.com',9610019784);
-insert into members(member_ID,member_name,Email,phone) values
-('M00027','Sydney','sydney@email.com',9610012791);
-insert into members(member_ID,member_name,Email,phone) values
-('M00028','Stephen','stephen@email.com',9610013689);
-insert into members(member_ID,member_name,Email,phone) values
-('M00029','Spencer','spencer@email.com',9610019751);
-insert into members(member_ID,member_name,Email,phone) values
-('M00030','Skyler','skyler@email.com',9610013563);
-insert into members(member_ID,member_name,Email,phone) values
-('M00031','Sixiang','sixiang@email.com',9610013584);
-insert into members(member_ID,member_name,Email,phone) values
-('M00032','Shreyas','shreyas@email.com',9610011100);
-insert into members(member_ID,member_name,Email,phone) values
-('M00033','Shelby','shelby@email.com',9610016399);
-insert into members(member_ID,member_name,Email,phone) values
-('M00034','Shayne','shayne@email.com',9610015405);
-insert into members(member_ID,member_name,Email,phone) values
-('M00035','Shayla','shayla@email.com',9610017872);
-insert into members(member_ID,member_name,Email,phone) values
-('M00036','Sharidan','sharidan@email.com',9610018095);
-insert into members(member_ID,member_name,Email,phone) values
-('M00037','Sarah','sarah@email.com',9610019423);
-insert into members(member_ID,member_name,Email,phone) values
-('M00038','Sara','sara@email.com',9610011096);
-insert into members(member_ID,member_name,Email,phone) values
-('M00039','Samuel','samuel@email.com',9610016393);
-insert into members(member_ID,member_name,Email,phone) values
-('M00040','Samiullah','samiullah@email.com',9610014714);
-insert into members(member_ID,member_name,Email,phone) values
-('M00041','Samantha','samantha@email.com',9610012510);
-insert into members(member_ID,member_name,Email,phone) values
-('M00042','Sam','sam@email.com',9610017570);
-insert into members(member_ID,member_name,Email,phone) values
-('M00043','Ronald','ronald@email.com',9610014271);
-insert into members(member_ID,member_name,Email,phone) values
-('M00044','Robert','robert@email.com',9610013089);
-insert into members(member_ID,member_name,Email,phone) values
-('M00045','Risa','risa@email.com',9610019550);
-insert into members(member_ID,member_name,Email,phone) values
-('M00046','Rebecca','rebecca@email.com',9610018915);
-insert into members(member_ID,member_name,Email,phone) values
-('M00047','Raeann','raeann@email.com',9610014840);
-insert into members(member_ID,member_name,Email,phone) values
-('M00048','Rachel','rachel@email.com',9610011436);
-insert into members(member_ID,member_name,Email,phone) values
-('M00049','Quentin','quentin@email.com',9610012490);
-insert into members(member_ID,member_name,Email,phone) values
-('M00050','Qixin','qixin@email.com',9610011099);
-insert into members(member_ID,member_name,Email,phone) values
-('M00051','Premiere','premiere@email.com',9610014815);
-insert into members(member_ID,member_name,Email,phone) values
-('M00052','Precious-Edna','precious-edna@email.com',9610016970);
-insert into members(member_ID,member_name,Email,phone) values
-('M00053','Phoenix','phoenix@email.com',9610015952);
-insert into members(member_ID,member_name,Email,phone) values
-('M00054','Peter','peter@email.com',9610013505);
-insert into members(member_ID,member_name,Email,phone) values
-('M00055','Payton','payton@email.com',9610015881);
-insert into members(member_ID,member_name,Email,phone) values
-('M00056','Paige','paige@email.com',9610012523);
-insert into members(member_ID,member_name,Email,phone) values
-('M00057','Noe','noe@email.com',9610017522);
-insert into members(member_ID,member_name,Email,phone) values
-('M00058','Nicole','nicole@email.com',9610016193);
-insert into members(member_ID,member_name,Email,phone) values
-('M00059','Nickalas','nickalas@email.com',9610017711);
-insert into members(member_ID,member_name,Email,phone) values
-('M00060','Nicholas','nicholas@email.com',9610014588);
-insert into members(member_ID,member_name,Email,phone) values
-('M00061','Nathan','nathan@email.com',9610017735);
-insert into members(member_ID,member_name,Email,phone) values
-('M00062','Natasha','natasha@email.com',9610017160);
-insert into members(member_ID,member_name,Email,phone) values
-('M00063','Natalie','natalie@email.com',9610014357);
-insert into members(member_ID,member_name,Email,phone) values
-('M00064','Narasimha','narasimha@email.com',9610014570);
-insert into members(member_ID,member_name,Email,phone) values
-('M00065','Myles','myles@email.com',9610016475);
-insert into members(member_ID,member_name,Email,phone) values
-('M00066','Morgan','morgan@email.com',9610013771);
-insert into members(member_ID,member_name,Email,phone) values
-('M00067','Miranda','miranda@email.com',9610011109);
-insert into members(member_ID,member_name,Email,phone) values
-('M00068','Mikayla','mikayla@email.com',9610015231);
-insert into members(member_ID,member_name,Email,phone) values
-('M00069','Michael','michael@email.com',9610015465);
-insert into members(member_ID,member_name,Email,phone) values
-('M00070','Merry','merry@email.com',9610016166);
-insert into members(member_ID,member_name,Email,phone) values
-('M00071','Mercedes','mercedes@email.com',9610013010);
-insert into members(member_ID,member_name,Email,phone) values
-('M00072','Menghan','menghan@email.com',9610012142);
-insert into members(member_ID,member_name,Email,phone) values
-('M00073','Megan','megan@email.com',9610013120);
-insert into members(member_ID,member_name,Email,phone) values
-('M00074','Matthew','matthew@email.com',9610019057);
-insert into members(member_ID,member_name,Email,phone) values
-('M00075','Marie','marie@email.com',9610018433);
-insert into members(member_ID,member_name,Email,phone) values
-('M00076','Maria','maria@email.com',9610019097);
-insert into members(member_ID,member_name,Email,phone) values
-('M00077','Manami','manami@email.com',9610019769);
-insert into members(member_ID,member_name,Email,phone) values
-('M00078','Mamerto','mamerto@email.com',9610017909);
-insert into members(member_ID,member_name,Email,phone) values
-('M00079','Mallory','mallory@email.com',9610018786);
-insert into members(member_ID,member_name,Email,phone) values
-('M00080','Malik','malik@email.com',9610012867);
-insert into members(member_ID,member_name,Email,phone) values
-('M00081','Madison','madison@email.com',9610015039);
-insert into members(member_ID,member_name,Email,phone) values
-('M00082','Madina','madina@email.com',9610016672);
-insert into members(member_ID,member_name,Email,phone) values
-('M00083','Madeline','madeline@email.com',9610012785);
-insert into members(member_ID,member_name,Email,phone) values
-('M00084','Macy','macy@email.com',9610012768);
-insert into members(member_ID,member_name,Email,phone) values
-('M00085','Mackenzie','mackenzie@email.com',9610011217);
-insert into members(member_ID,member_name,Email,phone) values
-('M00086','Lyssa','lyssa@email.com',9610011628);
-insert into members(member_ID,member_name,Email,phone) values
-('M00087','Luke','luke@email.com',9610018273);
-insert into members(member_ID,member_name,Email,phone) values
-('M00088','Louis','louis@email.com',9610014427);
-insert into members(member_ID,member_name,Email,phone) values
-('M00089','Likitha','likitha@email.com',9610016567);
-insert into members(member_ID,member_name,Email,phone) values
-('M00090','Laura','laura@email.com',9610013221);
-insert into members(member_ID,member_name,Email,phone) values
-('M00091','Landon','landon@email.com',9610018322);
-insert into members(member_ID,member_name,Email,phone) values
-('M00092','Kyla','kyla@email.com',9610018804);
-insert into members(member_ID,member_name,Email,phone) values
-('M00093','Krystal','krystal@email.com',9610016558);
-insert into members(member_ID,member_name,Email,phone) values
-('M00094','Kori','kori@email.com',9610014949);
-insert into members(member_ID,member_name,Email,phone) values
-('M00095','Kingham','kingham@email.com',9610016094);
-insert into members(member_ID,member_name,Email,phone) values
-('M00096','Kimberly','kimberly@email.com',9610019103);
-insert into members(member_ID,member_name,Email,phone) values
-('M00097','Kevin','kevin@email.com',9610014817);
-insert into members(member_ID,member_name,Email,phone) values
-('M00098','Kelsie','kelsie@email.com',9610012326);
-insert into members(member_ID,member_name,Email,phone) values
-('M00099','Kelsey','kelsey@email.com',9610016031);
-insert into members(member_ID,member_name,Email,phone) values
-('M00100','Kaylee','kaylee@email.com',9610012676);
-insert into members(member_ID,member_name,Email,phone) values
-('M00101','Kayla','kayla@email.com',9610012450);
-insert into members(member_ID,member_name,Email,phone) values
-('M00102','Katherine','katherine@email.com',9610019186);
-insert into members(member_ID,member_name,Email,phone) values
-('M00103','Katharyn','katharyn@email.com',9610015965);
-insert into members(member_ID,member_name,Email,phone) values
-('M00104','Katelyn','katelyn@email.com',9610016500);
-insert into members(member_ID,member_name,Email,phone) values
-('M00105','Kasey','kasey@email.com',9610014161);
-insert into members(member_ID,member_name,Email,phone) values
-('M00106','Karrigan','karrigan@email.com',9610011297);
-insert into members(member_ID,member_name,Email,phone) values
-('M00107','Karlie','karlie@email.com',9610018090);
-insert into members(member_ID,member_name,Email,phone) values
-('M00108','Kaleigh','kaleigh@email.com',9610014568);
-insert into members(member_ID,member_name,Email,phone) values
-('M00109','Kaci','kaci@email.com',9610013977);
-insert into members(member_ID,member_name,Email,phone) values
-('M00110','Julia','julia@email.com',9610011657);
-insert into members(member_ID,member_name,Email,phone) values
-('M00111','Joshua','joshua@email.com',9610013558);
-insert into members(member_ID,member_name,Email,phone) values
-('M00112','Josephine','josephine@email.com',9610018834);
-insert into members(member_ID,member_name,Email,phone) values
-('M00113','Joseph','joseph@email.com',9610015022);
-insert into members(member_ID,member_name,Email,phone) values
-('M00114','Jorge','jorge@email.com',9610016236);
-insert into members(member_ID,member_name,Email,phone) values
-('M00115','Jordan','jordan@email.com',9610013139);
-insert into members(member_ID,member_name,Email,phone) values
-('M00116','John','john@email.com',9610013805);
-insert into members(member_ID,member_name,Email,phone) values
-('M00117','Jessica','jessica@email.com',9610017829);
-insert into members(member_ID,member_name,Email,phone) values
-('M00118','Jeron','jeron@email.com',9610017735);
-insert into members(member_ID,member_name,Email,phone) values
-('M00119','Jeremy','jeremy@email.com',9610015147);
-insert into members(member_ID,member_name,Email,phone) values
-('M00120','Jennifer','jennifer@email.com',9610013882);
-insert into members(member_ID,member_name,Email,phone) values
-('M00121','Jennica','jennica@email.com',9610015792);
-insert into members(member_ID,member_name,Email,phone) values
-('M00122','Jenna','jenna@email.com',9610016732);
-insert into members(member_ID,member_name,Email,phone) values
-('M00123','Jason','jason@email.com',9610013730);
-insert into members(member_ID,member_name,Email,phone) values
-('M00124','Jasmine','jasmine@email.com',9610019039);
-insert into members(member_ID,member_name,Email,phone) values
-('M00125','Jarelle','jarelle@email.com',9610014499);
-insert into members(member_ID,member_name,Email,phone) values
-('M00126','James','james@email.com',9610011380);
-insert into members(member_ID,member_name,Email,phone) values
-('M00127','Jahanzib','jahanzib@email.com',9610013013);
-insert into members(member_ID,member_name,Email,phone) values
-('M00128','Jaelyn','jaelyn@email.com',9610017802);
-insert into members(member_ID,member_name,Email,phone) values
-('M00129','Jacob','jacob@email.com',9610014918);
-insert into members(member_ID,member_name,Email,phone) values
-('M00130','Jacey','jacey@email.com',9610014096);
-insert into members(member_ID,member_name,Email,phone) values
-('M00131','Jace','jace@email.com',9610019855);
-insert into members(member_ID,member_name,Email,phone) values
-('M00132','Isiah','isiah@email.com',9610011701);
-insert into members(member_ID,member_name,Email,phone) values
-('M00133','Isaac','isaac@email.com',9610016778);
-insert into members(member_ID,member_name,Email,phone) values
-('M00134','Holden','holden@email.com',9610019996);
-insert into members(member_ID,member_name,Email,phone) values
-('M00135','Henry','henry@email.com',9610012217);
-insert into members(member_ID,member_name,Email,phone) values
-('M00136','Heather','heather@email.com',9610018340);
-insert into members(member_ID,member_name,Email,phone) values
-('M00137','Haotian','haotian@email.com',9610018544);
-insert into members(member_ID,member_name,Email,phone) values
-('M00138','Hansaka','hansaka@email.com',9610016930);
-insert into members(member_ID,member_name,Email,phone) values
-('M00139','Hannah','hannah@email.com',9610018962);
-insert into members(member_ID,member_name,Email,phone) values
-('M00140','Haley','haley@email.com',9610015621);
-insert into members(member_ID,member_name,Email,phone) values
-('M00141','Gerald','gerald@email.com',9610014152);
-insert into members(member_ID,member_name,Email,phone) values
-('M00142','Gabriela','gabriela@email.com',9610019515);
-insert into members(member_ID,member_name,Email,phone) values
-('M00143','Fua','fua@email.com',9610013129);
-insert into members(member_ID,member_name,Email,phone) values
-('M00144','Francisco','francisco@email.com',9610012269);
-insert into members(member_ID,member_name,Email,phone) values
-('M00145','Fawaz','fawaz@email.com',9610012760);
-insert into members(member_ID,member_name,Email,phone) values
-('M00146','Faith','faith@email.com',9610016510);
-insert into members(member_ID,member_name,Email,phone) values
-('M00147','Evette','evette@email.com',9610012432);
-insert into members(member_ID,member_name,Email,phone) values
-('M00148','Ethan','ethan@email.com',9610012486);
-insert into members(member_ID,member_name,Email,phone) values
-('M00149','Emma','emma@email.com',9610015201);
-insert into members(member_ID,member_name,Email,phone) values
-('M00150','Emily','emily@email.com',9610011800);
-insert into members(member_ID,member_name,Email,phone) values
-('M00151','Emilio','emilio@email.com',9610019080);
-insert into members(member_ID,member_name,Email,phone) values
-('M00152','Elson','elson@email.com',9610011978);
-insert into members(member_ID,member_name,Email,phone) values
-('M00153','Elizabeth','elizabeth@email.com',9610012447);
-insert into members(member_ID,member_name,Email,phone) values
-('M00154','Elijah','elijah@email.com',9610013687);
-insert into members(member_ID,member_name,Email,phone) values
-('M00155','Dustin','dustin@email.com',9610018521);
-insert into members(member_ID,member_name,Email,phone) values
-('M00156','Donovan','donovan@email.com',9610011280);
-insert into members(member_ID,member_name,Email,phone) values
-('M00157','Disha','disha@email.com',9610012591);
-insert into members(member_ID,member_name,Email,phone) values
-('M00158','Dillon','dillon@email.com',9610015747);
-insert into members(member_ID,member_name,Email,phone) values
-('M00159','DeShonna','deshonna@email.com',9610019672);
-insert into members(member_ID,member_name,Email,phone) values
-('M00160','Derril','derril@email.com',9610012424);
-insert into members(member_ID,member_name,Email,phone) values
-('M00161','Denis','denis@email.com',9610015073);
-insert into members(member_ID,member_name,Email,phone) values
-('M00162','Debarshi','debarshi@email.com',9610016352);
-insert into members(member_ID,member_name,Email,phone) values
-('M00163','DeAngelena','deangelena@email.com',9610011680);
-insert into members(member_ID,member_name,Email,phone) values
-('M00164','David','david@email.com',9610016900);
-insert into members(member_ID,member_name,Email,phone) values
-('M00165','Daniel','daniel@email.com',9610015011);
-insert into members(member_ID,member_name,Email,phone) values
-('M00166','Damilola','damilola@email.com',9610017393);
-insert into members(member_ID,member_name,Email,phone) values
-('M00167','Dakota','dakota@email.com',9610013436);
-insert into members(member_ID,member_name,Email,phone) values
-('M00168','Corben','corben@email.com',9610011630);
-insert into members(member_ID,member_name,Email,phone) values
-('M00169','Connor','connor@email.com',9610016982);
-insert into members(member_ID,member_name,Email,phone) values
-('M00170','Cole','cole@email.com',9610012821);
-insert into members(member_ID,member_name,Email,phone) values
-('M00171','Cierra','cierra@email.com',9610014541);
-insert into members(member_ID,member_name,Email,phone) values
-('M00172','Christopher','christopher@email.com',9610013303);
-insert into members(member_ID,member_name,Email,phone) values
-('M00173','Christine','christine@email.com',9610015690);
-insert into members(member_ID,member_name,Email,phone) values
-('M00174','Christina','christina@email.com',9610013743);
-insert into members(member_ID,member_name,Email,phone) values
-('M00175','Chelsey','chelsey@email.com',9610014030);
-insert into members(member_ID,member_name,Email,phone) values
-('M00176','Chelsea','chelsea@email.com',9610018286);
-insert into members(member_ID,member_name,Email,phone) values
-('M00177','Cecilia','cecilia@email.com',9610012188);
-insert into members(member_ID,member_name,Email,phone) values
-('M00178','Catherine','catherine@email.com',9610018699);
-insert into members(member_ID,member_name,Email,phone) values
-('M00179','Cassandra','cassandra@email.com',9610014916);
-insert into members(member_ID,member_name,Email,phone) values
-('M00180','Caleb','caleb@email.com',9610012793);
-insert into members(member_ID,member_name,Email,phone) values
-('M00181','Brylie','brylie@email.com',9610019359);
-insert into members(member_ID,member_name,Email,phone) values
-('M00182','Brooklyn','brooklyn@email.com',9610019356);
-insert into members(member_ID,member_name,Email,phone) values
-('M00183','Brooke','brooke@email.com',9610013040);
-insert into members(member_ID,member_name,Email,phone) values
-('M00184','Brittany','brittany@email.com',9610014780);
-insert into members(member_ID,member_name,Email,phone) values
-('M00185','Bricelis','bricelis@email.com',9610014741);
-insert into members(member_ID,member_name,Email,phone) values
-('M00186','Brian','brian@email.com',9610011676);
-insert into members(member_ID,member_name,Email,phone) values
-('M00187','Brenda','brenda@email.com',9610019720);
-insert into members(member_ID,member_name,Email,phone) values
-('M00188','Brandon','brandon@email.com',9610013639);
-insert into members(member_ID,member_name,Email,phone) values
-('M00189','Brady','brady@email.com',9610014442);
-insert into members(member_ID,member_name,Email,phone) values
-('M00190','Brad','brad@email.com',9610013417);
-insert into members(member_ID,member_name,Email,phone) values
-('M00191','Bethany','bethany@email.com',9610014257);
-insert into members(member_ID,member_name,Email,phone) values
-('M00192','Benton','benton@email.com',9610016793);
-insert into members(member_ID,member_name,Email,phone) values
-('M00193','Benjamin','benjamin@email.com',9610016411);
-insert into members(member_ID,member_name,Email,phone) values
-('M00194','Artem','artem@email.com',9610016536);
-insert into members(member_ID,member_name,Email,phone) values
-('M00195','Anran','anran@email.com',9610018359);
-insert into members(member_ID,member_name,Email,phone) values
-('M00196','Angelica','angelica@email.com',9610012980);
-insert into members(member_ID,member_name,Email,phone) values
-('M00197','Andrew','andrew@email.com',9610016577);
-insert into members(member_ID,member_name,Email,phone) values
-('M00198','Ana','ana@email.com',9610013316);
-insert into members(member_ID,member_name,Email,phone) values
-('M00199','Amanda','amanda@email.com',9610014389);
-insert into members(member_ID,member_name,Email,phone) values
-('M00200','Alyssa','alyssa@email.com',9610011682);
-insert into members(member_ID,member_name,Email,phone) values
-('M00201','Alvin','alvin@email.com',9610019792);
-insert into members(member_ID,member_name,Email,phone) values
-('M00202','Allison','allison@email.com',9610012568);
-insert into members(member_ID,member_name,Email,phone) values
-('M00203','Allicia','allicia@email.com',9610016400);
-insert into members(member_ID,member_name,Email,phone) values
-('M00204','Allan','allan@email.com',9610019701);
-insert into members(member_ID,member_name,Email,phone) values
-('M00205','Alice','alice@email.com',9610015081);
-insert into members(member_ID,member_name,Email,phone) values
-('M00206','Alexia','alexia@email.com',9610018516);
-insert into members(member_ID,member_name,Email,phone) values
-('M00207','Alexandria','alexandria@email.com',9610015983);
-insert into members(member_ID,member_name,Email,phone) values
-('M00208','Alan','alan@email.com',9610013374);
-insert into members(member_ID,member_name,Email,phone) values
-('M00209','Adrianna','adrianna@email.com',9610013260);
-insert into members(member_ID,member_name,Email,phone) values
-('M00210','Adam','adam@email.com',9610017121);
-insert into members(member_ID,member_name,Email,phone) values
-('M00211','Abby','abby@email.com',9610012270);
-insert into members(member_ID,member_name,Email,phone) values
-('M00212','Abbigayle','abbigayle@email.com',9610016099);
-insert into members(member_ID,member_name,Email,phone) values
-('M00213','Aaron','aaron@email.com',9610019153);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00001','Vijay','Vijay','vijay@email.com',9610016572);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00002','Akash','Akash','akash@email.com',9610018459);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00003','Siddharth','Siddharth','siddharth@email.com',9610015535);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00004','Sandeep','Sandeep','sandeep@email.com',9610012495);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00005','Raja','Raja','raja@email.com',9610012653);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00006','Nithin','Nithin','nithin@email.com',9610019598);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00007','Zachery','Zachery','zachery@email.com',9610016961);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00008','Zachary','Zachary','zachary@email.com',9610019315);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00009','Zachariah','Zachariah','zachariah@email.com',9610013153);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00010','Yousuf','Yousuf','yousuf@email.com',9610015453);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00011','Yisi','Yisi','yisi@email.com',9610016655);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00012','Xianxin','Xianxin','xianxin@email.com',9610012463);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00013','Warren','Warren','warren@email.com',9610014186);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00014','Vijay','Vijay','vijay@email.com',9610019061);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00015','Victoria','Victoria','victoria@email.com',9610014532);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00016','Turner','Turner','turner@email.com',9610018472);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00017','Tristan','Tristan','tristan@email.com',9610013357);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00018','Trey','Trey','trey@email.com',9610016855);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00019','Traci','Traci','traci@email.com',9610014528);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00020','Tom','Tom','tom@email.com',9610014459);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00021','Ting','Ting','ting@email.com',9610018416);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00022','Timothy','Timothy','timothy@email.com',9610012800);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00023','Theresa','Theresa','theresa@email.com',9610016739);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00024','Theodora','Theodora','theodora@email.com',9610013425);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00025','Tara','Tara','tara@email.com',9610017692);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00026','Tanner','Tanner','tanner@email.com',9610019784);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00027','Sydney','Sydney','sydney@email.com',9610012791);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00028','Stephen','Stephen','stephen@email.com',9610013689);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00029','Spencer','Spencer','spencer@email.com',9610019751);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00030','Skyler','Skyler','skyler@email.com',9610013563);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00031','Sixiang','Sixiang','sixiang@email.com',9610013584);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00032','Shreyas','Shreyas','shreyas@email.com',9610011100);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00033','Shelby','Shelby','shelby@email.com',9610016399);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00034','Shayne','Shayne','shayne@email.com',9610015405);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00035','Shayla','Shayla','shayla@email.com',9610017872);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00036','Sharidan','Sharidan','sharidan@email.com',9610018095);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00037','Sarah','Sarah','sarah@email.com',9610019423);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00038','Sara','Sara','sara@email.com',9610011096);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00039','Samuel','Samuel','samuel@email.com',9610016393);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00040','Samiullah','Samiullah','samiullah@email.com',9610014714);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00041','Samantha','Samantha','samantha@email.com',9610012510);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00042','Sam','Sam','sam@email.com',9610017570);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00043','Ronald','Ronald','ronald@email.com',9610014271);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00044','Robert','Robert','robert@email.com',9610013089);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00045','Risa','Risa','risa@email.com',9610019550);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00046','Rebecca','Rebecca','rebecca@email.com',9610018915);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00047','Raeann','Raeann','raeann@email.com',9610014840);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00048','Rachel','Rachel','rachel@email.com',9610011436);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00049','Quentin','Quentin','quentin@email.com',9610012490);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00050','Qixin','Qixin','qixin@email.com',9610011099);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00051','Premiere','Premiere','premiere@email.com',9610014815);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00052','Precious-Edna','Precious-Edna','precious-edna@email.com',9610016970);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00053','Phoenix','Phoenix','phoenix@email.com',9610015952);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00054','Peter','Peter','peter@email.com',9610013505);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00055','Payton','Payton','payton@email.com',9610015881);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00056','Paige','Paige','paige@email.com',9610012523);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00057','Noe','Noe','noe@email.com',9610017522);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00058','Nicole','Nicole','nicole@email.com',9610016193);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00059','Nickalas','Nickalas','nickalas@email.com',9610017711);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00060','Nicholas','Nicholas','nicholas@email.com',9610014588);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00061','Nathan','Nathan','nathan@email.com',9610017735);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00062','Natasha','Natasha','natasha@email.com',9610017160);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00063','Natalie','Natalie','natalie@email.com',9610014357);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00064','Narasimha','Narasimha','narasimha@email.com',9610014570);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00065','Myles','Myles','myles@email.com',9610016475);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00066','Morgan','Morgan','morgan@email.com',9610013771);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00067','Miranda','Miranda','miranda@email.com',9610011109);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00068','Mikayla','Mikayla','mikayla@email.com',9610015231);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00069','Michael','Michael','michael@email.com',9610015465);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00070','Merry','Merry','merry@email.com',9610016166);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00071','Mercedes','Mercedes','mercedes@email.com',9610013010);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00072','Menghan','Menghan','menghan@email.com',9610012142);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00073','Megan','Megan','megan@email.com',9610013120);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00074','Matthew','Matthew','matthew@email.com',9610019057);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00075','Marie','Marie','marie@email.com',9610018433);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00076','Maria','Maria','maria@email.com',9610019097);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00077','Manami','Manami','manami@email.com',9610019769);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00078','Mamerto','Mamerto','mamerto@email.com',9610017909);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00079','Mallory','Mallory','mallory@email.com',9610018786);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00080','Malik','Malik','malik@email.com',9610012867);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00081','Madison','Madison','madison@email.com',9610015039);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00082','Madina','Madina','madina@email.com',9610016672);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00083','Madeline','Madeline','madeline@email.com',9610012785);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00084','Macy','Macy','macy@email.com',9610012768);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00085','Mackenzie','Mackenzie','mackenzie@email.com',9610011217);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00086','Lyssa','Lyssa','lyssa@email.com',9610011628);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00087','Luke','Luke','luke@email.com',9610018273);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00088','Louis','Louis','louis@email.com',9610014427);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00089','Likitha','Likitha','likitha@email.com',9610016567);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00090','Laura','Laura','laura@email.com',9610013221);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00091','Landon','Landon','landon@email.com',9610018322);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00092','Kyla','Kyla','kyla@email.com',9610018804);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00093','Krystal','Krystal','krystal@email.com',9610016558);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00094','Kori','Kori','kori@email.com',9610014949);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00095','Kingham','Kingham','kingham@email.com',9610016094);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00096','Kimberly','Kimberly','kimberly@email.com',9610019103);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00097','Kevin','Kevin','kevin@email.com',9610014817);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00098','Kelsie','Kelsie','kelsie@email.com',9610012326);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00099','Kelsey','Kelsey','kelsey@email.com',9610016031);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00100','Kaylee','Kaylee','kaylee@email.com',9610012676);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00101','Kayla','Kayla','kayla@email.com',9610012450);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00102','Katherine','Katherine','katherine@email.com',9610019186);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00103','Katharyn','Katharyn','katharyn@email.com',9610015965);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00104','Katelyn','Katelyn','katelyn@email.com',9610016500);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00105','Kasey','Kasey','kasey@email.com',9610014161);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00106','Karrigan','Karrigan','karrigan@email.com',9610011297);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00107','Karlie','Karlie','karlie@email.com',9610018090);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00108','Kaleigh','Kaleigh','kaleigh@email.com',9610014568);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00109','Kaci','Kaci','kaci@email.com',9610013977);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00110','Julia','Julia','julia@email.com',9610011657);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00111','Joshua','Joshua','joshua@email.com',9610013558);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00112','Josephine','Josephine','josephine@email.com',9610018834);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00113','Joseph','Joseph','joseph@email.com',9610015022);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00114','Jorge','Jorge','jorge@email.com',9610016236);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00115','Jordan','Jordan','jordan@email.com',9610013139);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00116','John','John','john@email.com',9610013805);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00117','Jessica','Jessica','jessica@email.com',9610017829);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00118','Jeron','Jeron','jeron@email.com',9610017735);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00119','Jeremy','Jeremy','jeremy@email.com',9610015147);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00120','Jennifer','Jennifer','jennifer@email.com',9610013882);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00121','Jennica','Jennica','jennica@email.com',9610015792);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00122','Jenna','Jenna','jenna@email.com',9610016732);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00123','Jason','Jason','jason@email.com',9610013730);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00124','Jasmine','Jasmine','jasmine@email.com',9610019039);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00125','Jarelle','Jarelle','jarelle@email.com',9610014499);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00126','James','James','james@email.com',9610011380);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00127','Jahanzib','Jahanzib','jahanzib@email.com',9610013013);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00128','Jaelyn','Jaelyn','jaelyn@email.com',9610017802);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00129','Jacob','Jacob','jacob@email.com',9610014918);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00130','Jacey','Jacey','jacey@email.com',9610014096);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00131','Jace','Jace','jace@email.com',9610019855);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00132','Isiah','Isiah','isiah@email.com',9610011701);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00133','Isaac','Isaac','isaac@email.com',9610016778);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00134','Holden','Holden','holden@email.com',9610019996);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00135','Henry','Henry','henry@email.com',9610012217);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00136','Heather','Heather','heather@email.com',9610018340);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00137','Haotian','Haotian','haotian@email.com',9610018544);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00138','Hansaka','Hansaka','hansaka@email.com',9610016930);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00139','Hannah','Hannah','hannah@email.com',9610018962);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00140','Haley','Haley','haley@email.com',9610015621);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00141','Gerald','Gerald','gerald@email.com',9610014152);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00142','Gabriela','Gabriela','gabriela@email.com',9610019515);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00143','Fua','Fua','fua@email.com',9610013129);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00144','Francisco','Francisco','francisco@email.com',9610012269);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00145','Fawaz','Fawaz','fawaz@email.com',9610012760);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00146','Faith','Faith','faith@email.com',9610016510);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00147','Evette','Evette','evette@email.com',9610012432);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00148','Ethan','Ethan','ethan@email.com',9610012486);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00149','Emma','Emma','emma@email.com',9610015201);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00150','Emily','Emily','emily@email.com',9610011800);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00151','Emilio','Emilio','emilio@email.com',9610019080);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00152','Elson','Elson','elson@email.com',9610011978);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00153','Elizabeth','Elizabeth','elizabeth@email.com',9610012447);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00154','Elijah','Elijah','elijah@email.com',9610013687);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00155','Dustin','Dustin','dustin@email.com',9610018521);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00156','Donovan','Donovan','donovan@email.com',9610011280);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00157','Disha','Disha','disha@email.com',9610012591);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00158','Dillon','Dillon','dillon@email.com',9610015747);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00159','DeShonna','DeShonna','deshonna@email.com',9610019672);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00160','Derril','Derril','derril@email.com',9610012424);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00161','Denis','Denis','denis@email.com',9610015073);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00162','Debarshi','Debarshi','debarshi@email.com',9610016352);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00163','DeAngelena','DeAngelena','deangelena@email.com',9610011680);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00164','David','David','david@email.com',9610016900);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00165','Daniel','Daniel','daniel@email.com',9610015011);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00166','Damilola','Damilola','damilola@email.com',9610017393);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00167','Dakota','Dakota','dakota@email.com',9610013436);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00168','Corben','Corben','corben@email.com',9610011630);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00169','Connor','Connor','connor@email.com',9610016982);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00170','Cole','Cole','cole@email.com',9610012821);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00171','Cierra','Cierra','cierra@email.com',9610014541);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00172','Christopher','Christopher','christopher@email.com',9610013303);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00173','Christine','Christine','christine@email.com',9610015690);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00174','Christina','Christina','christina@email.com',9610013743);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00175','Chelsey','Chelsey','chelsey@email.com',9610014030);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00176','Chelsea','Chelsea','chelsea@email.com',9610018286);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00177','Cecilia','Cecilia','cecilia@email.com',9610012188);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00178','Catherine','Catherine','catherine@email.com',9610018699);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00179','Cassandra','Cassandra','cassandra@email.com',9610014916);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00180','Caleb','Caleb','caleb@email.com',9610012793);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00181','Brylie','Brylie','brylie@email.com',9610019359);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00182','Brooklyn','Brooklyn','brooklyn@email.com',9610019356);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00183','Brooke','Brooke','brooke@email.com',9610013040);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00184','Brittany','Brittany','brittany@email.com',9610014780);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00185','Bricelis','Bricelis','bricelis@email.com',9610014741);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00186','Brian','Brian','brian@email.com',9610011676);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00187','Brenda','Brenda','brenda@email.com',9610019720);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00188','Brandon','Brandon','brandon@email.com',9610013639);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00189','Brady','Brady','brady@email.com',9610014442);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00190','Brad','Brad','brad@email.com',9610013417);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00191','Bethany','Bethany','bethany@email.com',9610014257);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00192','Benton','Benton','benton@email.com',9610016793);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00193','Benjamin','Benjamin','benjamin@email.com',9610016411);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00194','Artem','Artem','artem@email.com',9610016536);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00195','Anran','Anran','anran@email.com',9610018359);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00196','Angelica','Angelica','angelica@email.com',9610012980);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00197','Andrew','Andrew','andrew@email.com',9610016577);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00198','Ana','Ana','ana@email.com',9610013316);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00199','Amanda','Amanda','amanda@email.com',9610014389);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00200','Alyssa','Alyssa','alyssa@email.com',9610011682);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00201','Alvin','Alvin','alvin@email.com',9610019792);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00202','Allison','Allison','allison@email.com',9610012568);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00203','Allicia','Allicia','allicia@email.com',9610016400);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00204','Allan','Allan','allan@email.com',9610019701);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00205','Alice','Alice','alice@email.com',9610015081);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00206','Alexia','Alexia','alexia@email.com',9610018516);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00207','Alexandria','Alexandria','alexandria@email.com',9610015983);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00208','Alan','Alan','alan@email.com',9610013374);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00209','Adrianna','Adrianna','adrianna@email.com',9610013260);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00210','Adam','Adam','adam@email.com',9610017121);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00211','Abby','Abby','abby@email.com',9610012270);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00212','Abbigayle','Abbigayle','abbigayle@email.com',9610016099);
+insert into members(member_ID,username,member_name,Email,phone) values
+('M00213','Aaron','Aaron','aaron@email.com',9610019153);
+
 
 /*Groups table*/
 insert into groups(group_id,group_name) values('G00001','weekend trip');
@@ -588,44 +816,44 @@ insert into member_groups(member_group_id,group_id,member_id,member_value) value
 insert into member_groups(member_group_id,group_id,member_id,member_value) values('MG000130','G00020','M00130',1);
 
 /*Expenses*/
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00001','G00001','toll',5,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00002','G00001','petrol',50,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00003','G00001','lodge',40,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00004','G00001','water',3,3);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00005','G00001','tea',10,1);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00006','G00001','breakfast ',22,3);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00007','G00001','snacks',40,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00008','G00001','fruits',35,3);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00009','G00001','water ',6,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00010','G00001','temple ticket',7,4);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00011','G00001','lunch ',20,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00012','G00001','dinner ',31,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00013','G00001','cd',9,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00014','G00001','water ',6,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00015','G00001','toll',5,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00016','G00001','breakfast ',23,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00017','G00001','petrol',50,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00018','G00001','entry ticket',9,3);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00019','G00001','room',100,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00020','G00001','dinner',15,3);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00021','G00001','petrol',30,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00022','G00001','petrol',30,7);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00023','G00001','tea',9,1);
-insert into expenses(transaction_id,group_id,item,cost,expenses_shared_with) values('T00024','G00001','Vechile rent',380,7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00001','G00001','toll',5,to_date('15-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00002','G00001','petrol',50,to_date('15-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00003','G00001','lodge',40,to_date('15-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00004','G00001','water',3,to_date('15-03-2017','DD-MM-YYYY'),3);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00005','G00001','tea',10,to_date('15-03-2017','DD-MM-YYYY'),1);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00006','G00001','breakfast ',22,to_date('15-03-2017','DD-MM-YYYY'),3);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00007','G00001','snacks',40,to_date('15-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00008','G00001','fruits',35,to_date('16-03-2017','DD-MM-YYYY'),3);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00009','G00001','water ',6,to_date('16-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00010','G00001','temple ticket',7,to_date('16-03-2017','DD-MM-YYYY'),4);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00011','G00001','lunch ',20,to_date('16-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00012','G00001','dinner ',31,to_date('16-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00013','G00001','cd',9,to_date('16-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00014','G00001','water ',6,to_date('16-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00015','G00001','toll',5,to_date('16-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00016','G00001','breakfast ',23,to_date('16-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00017','G00001','petrol',50,to_date('17-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00018','G00001','entry ticket',9,to_date('17-03-2017','DD-MM-YYYY'),3);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00019','G00001','room',100,to_date('17-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00020','G00001','dinner',15,to_date('17-03-2017','DD-MM-YYYY'),3);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00021','G00001','petrol',30,to_date('17-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00022','G00001','petrol',30,to_date('17-03-2017','DD-MM-YYYY'),7);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00023','G00001','tea',9,to_date('17-03-2017','DD-MM-YYYY'),1);
+insert into expenses(transaction_id,group_id,item,cost,expenditure_date,expenses_shared_with) values('T00024','G00001','Vechile rent',380,to_date('17-03-2017','DD-MM-YYYY'),7);
 
-//lists
-insert into lists(list_id,group_id,list,status) values('L00001','G00006','Clean the kitchen',0);
-insert into lists(list_id,group_id,list,status) values('L00002','G00006','Bring Grocery',0);
-insert into lists(list_id,group_id,list,status) values('L00003','G00006','Repair the door knob',0);
-insert into lists(list_id,group_id,list,status) values('L00004','G00006','Pay the internet bill',0);
-insert into lists(list_id,group_id,list,status) values('L00005','G00002','Fill the fuel',0);
-insert into lists(list_id,group_id,list,status) values('L00006','G00002','Renew the insurance',0);
-insert into lists(list_id,group_id,list,status) values('L00007','G00003','Send tax returns mail',0);
-insert into lists(list_id,group_id,list,status) values('L00008','G00004','Purchase toaster',0);
-insert into lists(list_id,group_id,list,status) values('L00009','G00004','Purchase vaccum cleaner',0);
-insert into lists(list_id,group_id,list,status) values('L00010','G00005','Book ticket',0);
-insert into lists(list_id,group_id,list,status) values('L00011','G00005','Reserve hotel',0);
-insert into lists(list_id,group_id,list,status) values('L00012','G00005','Buy roaming phone plan',0);
 
-//notes
+/*tasks*/
+insert into tasks(task_id,group_id,task,status) values('L00001','G00006','Clean the kitchen',0);
+insert into tasks(task_id,group_id,task,status) values('L00002','G00006','Bring Grocery',0);
+insert into tasks(task_id,group_id,task,status) values('L00003','G00006','Repair the door knob',0);
+insert into tasks(task_id,group_id,task,status) values('L00004','G00006','Pay the internet bill',0);
+insert into tasks(task_id,group_id,task,status) values('L00005','G00002','Fill the fuel',0);
+insert into tasks(task_id,group_id,task,status) values('L00006','G00002','Renew the insurance',0);
+insert into tasks(task_id,group_id,task,status) values('L00007','G00003','Send tax returns mail',0);
+insert into tasks(task_id,group_id,task,status) values('L00008','G00004','Purchase toaster',0);
+insert into tasks(task_id,group_id,task,status) values('L00009','G00004','Purchase vaccum cleaner',0);
+insert into tasks(task_id,group_id,task,status) values('L00010','G00005','Book ticket',0);
+insert into tasks(task_id,group_id,task,status) values('L00011','G00005','Reserve hotel',0);
+insert into tasks(task_id,group_id,task,status) values('L00012','G00005','Buy roaming phone plan',0);
+
 

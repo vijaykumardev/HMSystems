@@ -1,4 +1,5 @@
 /*drop DB objects*/
+drop table if exists schedules;
 drop table if exists messages;
 drop table if exists tasks;
 drop table if exists notes;
@@ -6,6 +7,7 @@ drop table if exists expenses;
 drop table if exists member_groups;
 drop table if exists groups;
 drop table if exists members;
+drop table if exists login;
 
 drop sequence if exists member_id_seq;
 drop sequence if exists member_groups_id_seq;
@@ -14,14 +16,27 @@ drop sequence if exists transaction_id_seq;
 drop sequence if exists note_id_seq;
 drop sequence if exists task_id_seq;
 drop sequence if exists message_id_seq;
+drop sequence if exists schedule_id_seq;
+
+drop type interval_type;
+
+create type interval_type as enum('0','hour','day','week','month');
 
 /*Table creation*/
+create table login(
+username varchar(15),
+password varchar(20),
+primary key (username)
+);
+
 create table Members(
 member_ID varchar(6),
+username varchar(15),
 member_name varchar(30),
 Email varchar(30),
 Phone numeric(10,0),
-primary key (member_id));
+primary key (member_id),
+foreign key (username) references login(username));
 
 create table groups(
 group_ID varchar(6), /*Group ID will be null to represent member independent of any group*/
@@ -42,17 +57,18 @@ transaction_ID varchar(8),
 group_id varchar(6),
 item varchar(30),
 cost integer,
+expenditure_date date,
 expenses_shared_with integer,
 primary key (transaction_ID),
 foreign key (group_id) references groups(group_id)
 /*implement check for expenses_shared_with*/);
 
 create table tasks(
-list_ID varchar(6),
+task_ID varchar(6),
 group_id varchar(6),
-list varchar(30),
+task varchar(30),
 status integer,
-primary key(list_ID),
+primary key(task_ID),
 foreign key (group_id) references groups(group_id));
 
 create table notes(
@@ -60,7 +76,7 @@ note_ID varchar(6),
 group_id varchar(6),
 text varchar(3000),
 share_with integer,
-pin integer,
+pin_to integer,
 primary key(note_ID),
 foreign key (group_id) references groups(group_id)
 /*implement check for share_with and pin*/);
@@ -83,6 +99,13 @@ primary key(message_ID),
 foreign key (to_ID) references groups(group_ID),
 foreign key (from_ID) references members(member_ID));
 
+create table schedules(
+schedule_id varchar(6),
+schedule_activity varchar(6),
+start_date date,
+schedule_interval interval_type,
+iterations int);
+
 /*Sequence creation*/
 create sequence member_id_seq increment by 1 start with 1 no cycle;
 create sequence member_groups_id_seq increment by 1 start with 1 no cycle;
@@ -91,3 +114,4 @@ create sequence transaction_id_seq increment by 1 start with 1 no cycle;
 create sequence task_id_seq increment by 1 start with 1 no cycle;
 create sequence note_id_seq increment by 1 start with 1 no cycle;
 create sequence message_id_seq increment by 1 start with 1 no cycle;
+create sequence schedule_id_seq increment by 1 start with 1 no cycle;

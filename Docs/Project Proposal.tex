@@ -116,22 +116,44 @@ Task, List and Expense. Task involves work which will consume time of the activi
 Each users in the given project will have equal access. The groups can be created by members. Members can create new groups, add, delete or modify items. \\
 \ \\
 \noindent \textbf{Tables} \\
-Members(\underline{member\_id},member\_name,email,phone) \\
+Login(\underline{username},password) \\
+Members(\underline{member\_id},username,member\_name,email,phone) \\
+Groups(\underline{group\_id},group\_name) \\
 Member\_groups(\underline{member\_group\_id},group\_id,member\_id,member\_value) \\
-Groups(\underline{group\_id},member\_id,group\_name) \\
-Expenses(\underline{transaction\_id},member\_group\_id,item,cost,expenses\_shared\_with) \\
-Lists(\underline{list\_id},member\_group\_id,list,status) \\
-Tasks(\underline{task\_id},member\_group\_id,task,status) \\
+Expenses(\underline{transaction\_id},group\_id,item,cost,expenses\_shared\_with) \\
+Notes(\underline{note\_id},group\_id,list,status,pin\_to) \\
+Tasks(\underline{task\_id},group\_id,task,status) \\
 Messages(\underline{message\_id},to\_id,from\_id,message,time) \\
+Schedules(\underline{schedule\_id},schedule\_activity,start\_date,schedule\_interval,iterations) \\
 \ \\
 \noindent \textbf{Table description} \\
 \begin{enumerate}
+\item[Login] Contains data for user credential verification.
 \item[Members] Will hold all the member details.
 \item[Groups] Members form a group which involve in certain activity. Expenses, Lists and Tasks uses this group as a reference to specific member activity.
-\item[Member\_groups] This table reduces the redundancy of using both group\_id and member\_id in each activities(Expenses, Lists, Tasks) and as well as messages instead member\_group\_id is used in it's place. member\_value column is assigned unique value to a member within a group which enables to identify if only few member in that group. For example, If a purchase is made and it should be shared between 3 members in a 5 member group. member\_value column will help in identifying these three members out of 5 and expenses will be shared among only these 3.(member\_value column will be modified based on implementation realization. This table needs both SQL and NoSQL database implementation to accommodate the Message table.
-\item[Expenses] Activity involving expenses. expenses\_shared\_with column references Member\_groups(member\_value) to identify whether the expenses is of individual or whole group or few members in a group.
-\item[List,Task] Activity involving Lists and Tasks. Status refers to whether the activity is pending or completed.
-\item[Messages] Message can be attached to any activity, group or individual based on to\_id(sender of message by an individual) and from\_id(reciever of the message to group or individual or selected members in a group for an activity). The given relation is given for a SQL database which will be translated to NoSQL database upon implementation.
+\item[Member\_groups] This table reduces the redundancy of using both \emph{group\_id} and \emph{member\_id} in each activities(Expenses, Lists, Tasks) and as well as messages instead \emph{member\_group\_id} is used in it's place. \emph{member\_value} column is assigned unique value to a member within a group which enables to identify if only few member in that group involved in the group or all. For example, If a purchase is made and it should be shared between 3 members in a 5 member group. \emph{member\_value} column will help in identifying these three members out of 5 and expenses will be shared among only these 3.member\_value column contains value in powers of 2 to identify which member in the group is involved. For example, group containing 5 members. Consider a,b,c,d,e are 5 members relatively assigned as a as 1st member, b as second member $\cdots$ . 
+\begin{align*}
+\textit{member\_value}&=\displaystyle\sum_{i=1}^{n}2^{(i-1)}*x_i\\
+\end{align*}
+\begin{align*}
+x_i =
+  \begin{cases}
+    1       & \quad \text{if } i^\text{th} \text{ is involved in activity}\\
+    0  & \quad \text{if } i^\text{th} \text{ is not involved in activity}\\
+  \end{cases} \\
+\end{align*}
+For the example,
+\begin{align*}
+\textit{only member a is involve}&=2^0*1+2^1*0+2^2*0+2^3*0+2^3*0=1\\
+\textit{only member a and e is involve}&=2^0*1+2^1*0+2^2*0+2^3*0+2^3*1=1+16=17\\
+\textit{only member a,c and e is involve}&=2^0*1+2^1*0+2^2*1+2^3*0+2^3*1=1+4+16=21\\
+\textit{all members are involved}&=2^0*1+2^1*1+2^2*1+2^3*1+2^3*1=1+2+4+8+16=31\\
+\end{align*}
+This table needs both SQL and NoSQL database implementation to accommodate the Message table.
+\item[Expenses] Activity involving expenses. \emph{expenses\_shared\_with column} references \emph{Member\_groups(member\_value)} to identify whether the expenses is of individual or whole group or few members in a group.
+\item[Notes,Tasks] Activity involving Lists and Tasks. \emph{Shared\_with column} refers to who is a group this tasks is assigned to. Absence of pin\_to refers to tasks completed by that member.
+\item[Messages] Message can be attached to any activity, group or individual based on \emph{to\_id}(sender of message by an individual) and \emph{from\_id}(reciever of the message to group or individual or selected members in a group for an activity). The given relation is given for a SQL database which will be translated to NoSQL database upon implementation.
+\item[Schedules] Attaching the scheduling event to the activity(Expense,Notes,Task) or to a Group. Scheduling can be one time or recurring at a constant interval. \emph{interval} signifies the time gap between two activity. \emph{iterations} specifies number of times this activity should be repeated.\\
 \end{enumerate}
 \noindent \textbf{Entity Relationship Diagram} \\
 \begin{figure}[h]
