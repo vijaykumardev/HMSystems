@@ -1,8 +1,12 @@
 /*drop DB objects*/
 drop function members_func(varchar,members);
 drop function login_func(varchar,login);
+drop function expenses_func(varchar,varchar,expenses_in_t[],varchar[]);
+drop function member_groups_func(varchar,member_groups[]);
+drop function groups_func(character varying,groups);
 
-drop type interval_type;
+/*drop type interval_type;*/
+drop type expenses_in_t;
 
 drop table if exists schedules;
 drop table if exists messages;
@@ -23,7 +27,13 @@ drop sequence if exists task_id_seq;
 drop sequence if exists message_id_seq;
 drop sequence if exists schedule_id_seq;
 
-create type interval_type as enum('0','hour','day','week','month');
+/*create type interval_type as enum('0','hour','day','week','month');*/
+
+create type expenses_in_t as (
+expense_id varchar(6),
+itemname varchar(30),
+date_time varchar,
+costs int);
 
 /*Table creation*/
 create table login(
@@ -60,7 +70,7 @@ transaction_ID varchar(8),
 group_id varchar(6),
 item varchar(30) not null,
 cost integer,
-expenditure_date date,
+expenditure_date timestamp,
 expenses_shared_with bit varying,
 primary key (transaction_ID),
 foreign key (group_id) references groups(group_id)
