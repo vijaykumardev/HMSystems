@@ -4,9 +4,16 @@ drop function login_func(varchar,login);
 drop function expenses_func(varchar,varchar,expenses_in_t[],varchar[]);
 drop function member_groups_func(varchar,member_groups[]);
 drop function groups_func(character varying,groups);
+drop function expenses_func(expenses_func_parameter);
+drop function notes_func(varchar,varchar);
+drop function notes_func(varchar,notes[],varchar[],varchar[]);
+drop function tasks_func(varchar,varchar,int);
+drop function tasks_func(varchar,tasks[],varchar[]);
+drop function expenses_func(varchar,varchar,expenses_in_t[],varchar[]);
 
 /*drop type interval_type;*/
 drop type expenses_in_t;
+drop type expenses_func_parameter;
 
 drop table if exists schedules;
 drop table if exists messages;
@@ -27,13 +34,21 @@ drop sequence if exists task_id_seq;
 drop sequence if exists message_id_seq;
 drop sequence if exists schedule_id_seq;
 
-/*create type interval_type as enum('0','hour','day','week','month');*/
+/*User defined type*/
 
 create type expenses_in_t as (
 expense_id varchar(6),
 itemname varchar(30),
 date_time varchar,
 costs int);
+
+create type expenses_func_parameter as(
+member_id varchar,
+group_id varchar,
+time_interval varchar,
+start_time varchar,
+end_time varchar
+);
 
 /*Table creation*/
 create table login(
